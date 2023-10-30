@@ -1,0 +1,26 @@
+a{
+    text-decoration:none;
+}
+.nav{
+    display:flex;
+    margin-top:10px;
+    justify-content:space-between;
+}
+.logo{
+    font-size:40px;
+    color:violet;
+
+}
+.menu{
+    display:inline-flex;
+    list-style-type:none;
+}
+.menu li{
+    padding-left:15px;
+    color:violet;
+}
+.searchbox input{
+    flex:1;
+    border:1px solid violet;
+    height:35px;
+}
