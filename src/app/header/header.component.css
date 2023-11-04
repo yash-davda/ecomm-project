@@ -1,6 +1,9 @@
 a{
     text-decoration:none;
 }
+ul{
+    padding:0px;
+}
 .nav{
     display:flex;
     margin-top:10px;
@@ -23,4 +26,11 @@ a{
     flex:1;
     border:1px solid violet;
     height:35px;
+    margin-top:6px;
+}
+.searchbox {
+  align-self: center;
+  flex:1;
+  display:flex;
+  padding:0px 50px;
 }

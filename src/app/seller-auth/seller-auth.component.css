@@ -1,0 +1,15 @@
+.seller-form{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+.signupHeadder {
+  display: inline-block;
+  background-color: #8cb0ff;
+  padding: 10px;
+  width: 100%;
+}
+.signupform {
+  padding: 10px;
+  background-color: #f3f5f8;
+}
