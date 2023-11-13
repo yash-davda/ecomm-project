@@ -8,16 +8,15 @@ import { SignUp } from '../data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent {
+  ngOnInit() {
+    this.seller.reloadSeller();
+  }
   constructor(private seller: SellerService, private router: Router) {
 
   }
   signUp(data: SignUp): void {
     console.log(data);
-    this.seller.userSignUp(data).subscribe((result) => {
-      if (result) {
-        this.router.navigate(['seller-home']);
-      }
-    });
+    this.seller.userSignUp(data);
   }
   
 }
