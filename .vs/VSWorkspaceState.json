@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header"
+    "\\src\\app\\header",
+    "\\src\\app\\seller-auth"
   ],
-  "SelectedNode": "\\src\\app\\header\\header.component.css",
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
