@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\header",
-    "\\src\\app\\seller-auth"
+    "\\src\\app\\seller-auth",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\db.json",
   "PreviewInSolutionExplorer": false
 }

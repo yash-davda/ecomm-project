@@ -1,58 +1,34 @@
 {
   "seller": [
     {
-      "name": "Ramji",
-      "email": "ramji@gmail.com",
-      "password": "test@123",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "paswword": "test123",
       "id": 1
     },
     {
-      "name": "Yash",
-      "email": "yashdavda@gmail.com",
-      "paswword": "test@123",
+      "name": "",
+      "email": "",
+      "paswword": "",
       "id": 2
     },
     {
-      "name": "Jay",
-      "email": "jay@gmail.com",
-      "paswword": "test123",
+      "name": "Nilam",
+      "email": "niliam@gmail.com",
+      "paswword": "test@123",
       "id": 3
     },
     {
-      "name": "Ram",
-      "email": "ram@gmail.com",
-      "paswword": "test@123",
+      "name": "NiYa",
+      "email": "niya@gmail.com",
+      "paswword": "abc123",
       "id": 4
     },
     {
-      "name": "Nilam",
-      "email": "nilam@test.com",
-      "paswword": "test@123",
+      "name": "Shiv",
+      "email": "shiv@gmail.com",
+      "password": "abc123",
       "id": 5
-    },
-    {
-      "name": "Nilam",
-      "email": "nilam@test.com",
-      "paswword": "test@123",
-      "id": 6
-    },
-    {
-      "name": "Nilam",
-      "email": "nilam@test.com",
-      "paswword": "test@123",
-      "id": 7
-    },
-    {
-      "name": "Nilu",
-      "email": "nilu@test.com",
-      "paswword": "test123",
-      "id": 8
-    },
-    {
-      "name": "Lily",
-      "email": "lily@test.com",
-      "paswword": "123",
-      "id": 9
     }
   ]
 }

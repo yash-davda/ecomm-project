@@ -1,26 +1,51 @@
-<div class="seller-form">
-<form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
-  <div>
-<div class="text-center">
-  <p class="m-0 signupHeadder">Seller Sign-Up</p>
+<div *ngIf="!showLogin" class="seller-form">
+  <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+    <div>
+      <div class="text-center">
+        <p class="m-0 signupHeadder">Seller Sign-Up</p>
+      </div>
+      <div class="signupform">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Enter Name:</label>
+          <input type="email" class="form-control" name="name" ngModel id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <input type="email" class="form-control" name="email" ngModel id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password:</label>
+          <input type="password" class="form-control" ngModel name="password" id="exampleInputPassword1">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+      <a class="d-flex justify-content-center mt-1" (click)="openLogin()" >Already Have An Account ? Click To Login</a>
+    </div>
+  </form>
 </div>
-  <div class="signupform">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Enter Name:</label>
-      <input type="email" class="form-control" name="name" ngModel id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email:</label>
-      <input type="email" class="form-control" name="email" ngModel  id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password:</label>
-      <input type="password" class="form-control" ngModel  name="paswword" id="exampleInputPassword1">
-    </div>
+  <!--Login Area-->
+  <div *ngIf="showLogin"  class="seller-form">
+    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+      <div>
+        <div class="text-center">
+          <p class="m-0 signupHeadder">Seller Login</p>
+        </div>
+        <div class="signupform">
+          <p style="color:red;font-size:12px;">{{isAuthError}}</p>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" ngModel id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password:</label>
+            <input type="password" class="form-control" ngModel name="password" id="exampleInputPassword1">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+        <a class="d-flex justify-content-center mt-1" (click)="openSignup()">Dont Have An Account ? Click To SignUp</a>
+      </div>
+    </form>
   </div>
-  <button type="submit" class="btn btn-primary w-100">Submit</button>
-  </div>
-</form>
-</div>
